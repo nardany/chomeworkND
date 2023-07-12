@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(){
+	int fn = 0; /*Firts Number */
+	int sn = 0; /*Second Number */
+	int tn = 0; /*Third Number */
+	printf("Mutgareq Tiv \n");
+	scanf("%d", &fn);
+	scanf("%d", &sn);
+	scanf("%d", &tn);
+	if(fn == sn || fn == tn || sn == tn)
+	{
+		if(fn > sn && fn > tn){
+			printf("%d",fn);
+		}
+		else if(sn > fn && sn > tn){
+			printf("%d",sn);
+		}
+		else{
+			printf("%d",tn);
+		}
+	}
+	else
+	{
+		printf("!=");
+	}
+}
